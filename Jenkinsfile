@@ -39,8 +39,8 @@ pipeline
       
     stage('Unit Testing'){
       steps{
-       sh 'sleep ${params.SLEEP_TIME}'
-       sh 'curl -s http://localhost:${params.PORT}/hello'
+       sh "sleep ${params.SLEEP_TIME}"
+       sh "curl -s http://localhost:${params.PORT}/hello"
 
       }
     }
