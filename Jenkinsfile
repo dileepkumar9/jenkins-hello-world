@@ -17,7 +17,7 @@ pipeline
        stage('build'){
       steps{
         sh 'mvn clean package -DSkipTests=True'
-        archiveArtifacts artifacts: '/target/hello-demo-*.jar', followSymlinks: false
+        archiveArtifacts artifacts: 'target/hello-demo-*.jar', followSymlinks: false
         
       }
     }
