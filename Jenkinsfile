@@ -24,7 +24,7 @@ pipeline
      stage('test'){
       steps{
         sh 'mvn test'
-        junit keepTestNames: true, stdioRetention: '', testResults: '/target/surefire-reports/TEST-*.xml'
+        junit keepTestNames: true, stdioRetention: '', testResults: 'target/surefire-reports/TEST-*.xml'
         
       }
     }
