@@ -11,7 +11,7 @@ pipeline
       steps{
         sh 'echo maven version'
         sh 'mvn -v'
-        sh " branch - "${params.BRANCH_NAME},sleeptime - ${params.SLEEP_TIME}, port- ${params.PORT}"
+        sh " branch - ${params.BRANCH_NAME},sleeptime - ${params.SLEEP_TIME}, port- ${params.PORT}"
       }
     }
        stage('build'){
